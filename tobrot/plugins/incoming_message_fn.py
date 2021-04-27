@@ -54,7 +54,7 @@ async def incoming_message_f(client, message):
     user_command = message.command[0]
     g_id = message.from_user.id
     credit = await message.reply_text(
-        f"🧲 Leeching for you <a href='tg://user?id={g_id}'>🤕</a>", parse_mode="html"
+        f"😼 Lᴇᴇᴄʜɪɴɢ Fᴏʀ Yᴏᴜ <a href='tg://user?id={g_id}'>😈</a>", parse_mode="html"
     )
     i_m_sefg = await message.reply_text("processing...", quote=True)
     # get link from the incoming message
@@ -127,7 +127,7 @@ async def incoming_youtube_dl_f(client, message):
     """ /ytdl command """
     current_user_id = message.from_user.id
     credit = await message.reply_text(
-        f"💀 Downloading for you <a href='tg://user?id={current_user_id}'>🤕</a>",
+        f"🤠 Dᴏᴡɴʟᴏᴀᴅɪɴɢ Fᴏʀ Yᴏᴜ <a href='tg://user?id={current_user_id}'>🤕</a>",
         parse_mode="html",
     )
     i_m_sefg = await message.reply_text("processing...", quote=True)
@@ -202,7 +202,7 @@ async def g_yt_playlist(client, message):
         return
     if "youtube.com/playlist" in url:
         i_m_sefg = await message.reply_text(
-            f"💀 Downloading for you <a href='tg://user?id={usr_id}'>🤗</a>",
+            f"🤠 Dᴏᴡɴʟᴏᴀᴅɪɴɢ Fᴏʀ Yᴏᴜ <a href='tg://user?id={usr_id}'>🤗</a>",
             parse_mode="html",
         )
         await yt_playlist_downg(message, i_m_sefg, client, is_cloud)
@@ -275,7 +275,7 @@ async def rename_tg_file(client, message):
                     f"<a href='tg://user?id={usr_id}'>Your Requested Files</a>\n\n"
                 )
                 message_to_send = mention_req_user + message_to_send
-                message_to_send = message_to_send + "\n\n" + "#uploads"
+                message_to_send = message_to_send + "\n\n" + "Uᴘʟᴏᴀᴅᴇᴅ Bʏ : @TN57_BotZ"
             else:
                 message_to_send = "<i>FAILED</i> to upload files. 😞😞"
             await message.reply_text(
